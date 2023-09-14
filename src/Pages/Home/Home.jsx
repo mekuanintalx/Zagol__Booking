@@ -19,7 +19,6 @@ const Home = () => {
         </h1>
         <Properties />
 
-        <div className="border_line"></div>
         <Footer />
       </div>
     </div>
