@@ -1,6 +1,7 @@
 import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
 import Properties from "../Properties/Properties";
+import Footer from "../../components/Footer/Footer";
 import "./home.css";
 
 const Home = () => {
@@ -17,6 +18,9 @@ const Home = () => {
           Popular Attractions
         </h1>
         <Properties />
+
+        <div className="border_line"></div>
+        <Footer />
       </div>
     </div>
   );

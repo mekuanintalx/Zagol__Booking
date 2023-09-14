@@ -14,3 +14,8 @@
   width: 1024px;
   font-size: 20px;
 }
+.border_line {
+  padding: 10px;
+  background-color: #0565ec;
+  width: 98%;
+}
