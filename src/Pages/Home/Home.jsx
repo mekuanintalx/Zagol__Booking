@@ -1,5 +1,6 @@
 import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
+import Properties from "../Properties/Properties";
 import "./home.css";
 
 const Home = () => {
@@ -7,6 +8,16 @@ const Home = () => {
     <div>
       <Navbar />
       <Header />
+      <div className="homeContainer">
+        <h1 className="homeTitle" style={{ fontWeight: "bold" }}>
+          Featured Properties
+        </h1>
+        <Properties />
+        <h1 className="homeTitle" style={{ fontWeight: "bold" }}>
+          Popular Attractions
+        </h1>
+        <Properties />
+      </div>
     </div>
   );
 };
