@@ -49,7 +49,7 @@ const Flight = ({ type }) => {
   };
 
   const handleSearch = () => {
-    navigate("/hotels", { state: { destination, date, options } });
+    navigate("/flightsearch", { state: { destination, date, options } });
   };
   const handleFlight = () => {
     navigate("/flights");

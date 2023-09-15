@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Home";
 import Hotels from "./Pages/Hotels/Hotels";
 import Flight from "./Pages/Flight/Flight";
 import Sign from "./Pages/Sign/Sign";
+import Flights from "./Pages/Flights/Flights";
 import "./app.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/details" element={<Details />} />
         <Route path="/flights" element={<Flight />} />
         <Route path="/hotels" element={<Hotels />} />
+        <Route path="/flightsearch" element={<Flights />} />
         <Route path="/sign" element={<Sign />} />
       </Routes>
     </BrowserRouter>
