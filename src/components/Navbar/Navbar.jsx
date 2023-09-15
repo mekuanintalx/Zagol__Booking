@@ -6,6 +6,9 @@ const Navbar = () => {
   const handleClick = () => {
     navigate("/");
   };
+  const handleClickLogin = () => {
+    navigate("/sign");
+  };
   return (
     <div className="navbar">
       <div className="navContainer">
@@ -13,7 +16,9 @@ const Navbar = () => {
           Zagol Booking
         </span>
         <div className="navItems">
-          <button className="navButton">Register / Login </button>
+          <button className="navButton" onClick={handleClickLogin}>
+            Register / Login{" "}
+          </button>
         </div>
       </div>
     </div>
