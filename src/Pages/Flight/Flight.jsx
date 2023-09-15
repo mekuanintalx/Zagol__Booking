@@ -67,13 +67,13 @@ const Flight = ({ type }) => {
           }
         >
           <div className="headerList">
-            <div className="headerListItem active" onClick={handleFlight}>
-              <FontAwesomeIcon icon={faPlane} />
-              <span>Flights</span>
-            </div>
             <div className="headerListItem " onClick={handleHotel}>
               <FontAwesomeIcon icon={faHotel} />
               <span>Hotels</span>
+            </div>
+            <div className="headerListItem active" onClick={handleFlight}>
+              <FontAwesomeIcon icon={faPlane} />
+              <span>Flights</span>
             </div>
             <div className="headerListItem">
               <FontAwesomeIcon icon={faTrain} />
