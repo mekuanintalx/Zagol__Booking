@@ -62,13 +62,13 @@ const Header = ({ type }) => {
         }
       >
         <div className="headerList">
-          <div className="headerListItem active" onClick={handleFlight}>
-            <FontAwesomeIcon icon={faPlane} />
-            <span>Flights</span>
-          </div>
-          <div className="headerListItem " onClick={handleHotel}>
+          <div className="headerListItem active" onClick={handleHotel}>
             <FontAwesomeIcon icon={faHotel} />
             <span>Hotels</span>
+          </div>
+          <div className="headerListItem" onClick={handleFlight}>
+            <FontAwesomeIcon icon={faPlane} />
+            <span>Flights</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faTrain} />
@@ -93,19 +93,10 @@ const Header = ({ type }) => {
             <button className="headerBtn">Login / Register</button>
             <div className="headerSearch">
               <div className="headerSearchItem">
-                <FontAwesomeIcon icon={faPlane} className="headerIcon" />
+                <FontAwesomeIcon icon={faHotel} className="headerIcon" />
                 <input
                   type="text"
-                  placeholder="Leaving from"
-                  className="headerSearchInput"
-                  onChange={(e) => setDestination(e.target.value)}
-                />
-              </div>
-              <div className="headerSearchItem">
-                <FontAwesomeIcon icon={faPlane} className="headerIcon" />
-                <input
-                  type="text"
-                  placeholder="Going to"
+                  placeholder="Where are you going?"
                   className="headerSearchInput"
                   onChange={(e) => setDestination(e.target.value)}
                 />
