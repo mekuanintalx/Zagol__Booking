@@ -10,19 +10,17 @@ const SearchResult = () => {
   return (
     <div className="searchItem">
       <img
-        src="https://cf.bstatic.com/xdata/images/hotel/square600/261707778.webp?k=fa6b6128468ec15e81f7d076b6f2473fa3a80c255582f155cae35f9edbffdd78&o=&s=1"
+        style={{ width: "100px", height: "100px" }}
+        src="https://effoysira.com/wp-content/uploads/2023/01/FB_IMG_16737714405240162.jpg"
         alt=""
         className="siImg"
       />
       <div className="siDesc">
-        <h1 className="siTitle">Hilton Hotel</h1>
-        <span className="siDistance">5km from bole</span>
-        <span className="siTaxiOp">Free taxi</span>
-        <span className="siSubtitle">
-          Studio Apartment with Air conditioning
-        </span>
-        <span className="siFeatures">
-          Entire studio • 1 bathroom • 21m² 1 full bed
+        {/* <h1 className="siTitle">Dubie</h1> */}
+
+        <span className="siTitle">Addis Ababa - Dubie </span>
+        <span style={{ fontWeight: "bold" }} className="siFeatures">
+          18:45 - 20:30 (1h 50m )
         </span>
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
@@ -30,10 +28,6 @@ const SearchResult = () => {
         </span>
       </div>
       <div className="siDetails">
-        <div className="siRating">
-          <span>Excellent</span>
-          <button>4.9</button>
-        </div>
         <div className="siDetailTexts">
           <span className="siPrice">$120</span>
           <span className="siTaxOp">Includes taxes and fees</span>

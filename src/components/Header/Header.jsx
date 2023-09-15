@@ -47,6 +47,12 @@ const Header = ({ type }) => {
   const handleSearch = () => {
     navigate("/hotels", { state: { destination, date, options } });
   };
+  const handleFlight = () => {
+    navigate("/flights");
+  };
+  const handleHotel = () => {
+    navigate("/");
+  };
 
   return (
     <div className="header">
@@ -56,13 +62,13 @@ const Header = ({ type }) => {
         }
       >
         <div className="headerList">
-          <div className="headerListItem active">
-            <FontAwesomeIcon icon={faHotel} />
-            <span>Hotels</span>
-          </div>
-          <div className="headerListItem">
+          <div className="headerListItem active" onClick={handleFlight}>
             <FontAwesomeIcon icon={faPlane} />
             <span>Flights</span>
+          </div>
+          <div className="headerListItem " onClick={handleHotel}>
+            <FontAwesomeIcon icon={faHotel} />
+            <span>Hotels</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faTrain} />
@@ -87,10 +93,19 @@ const Header = ({ type }) => {
             <button className="headerBtn">Login / Register</button>
             <div className="headerSearch">
               <div className="headerSearchItem">
-                <FontAwesomeIcon icon={faHotel} className="headerIcon" />
+                <FontAwesomeIcon icon={faPlane} className="headerIcon" />
                 <input
                   type="text"
-                  placeholder="Where are you going?"
+                  placeholder="Leaving from"
+                  className="headerSearchInput"
+                  onChange={(e) => setDestination(e.target.value)}
+                />
+              </div>
+              <div className="headerSearchItem">
+                <FontAwesomeIcon icon={faPlane} className="headerIcon" />
+                <input
+                  type="text"
+                  placeholder="Going to"
                   className="headerSearchInput"
                   onChange={(e) => setDestination(e.target.value)}
                 />
